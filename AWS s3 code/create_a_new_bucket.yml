@@ -1,0 +1,6 @@
+- name: Create an empty bucket
+  s3:
+    bucket: mybucket
+    mode: create
+    permission: public-read
+    region: eu-west-1

@@ -1,0 +1,4 @@
+- name: Delete a bucket and all contents
+  s3:
+    bucket: bucket1
+    mode: delete

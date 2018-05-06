@@ -1,0 +1,5 @@
+# Get facts about an instance
+- rds:
+    command: facts
+    instance_name: Database-1
+  register: new_database_facts

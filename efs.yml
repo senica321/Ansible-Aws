@@ -1,0 +1,36 @@
+# Gather facts about all instances in AZ ap-southeast-2a
+- ec2_instance_facts:
+    filters:
+      availability-zone: ap-southeast-2a
+
+# Gather facts about a particular instance using ID
+- ec2_instance_facts:
+    instance_ids:
+      - i-12345678
+
+# Note: These examples do not set authentication details, see the AWS Guide for details.
+
+# Gather facts about all security groups
+- ec2_group_facts:
+
+# Gather facts about all security groups in a specific VPC
+- ec2_group_facts:
+    filters:
+      vpc-id: vpc-12345678
+
+
+      # EFS provisioning
+      - efs:
+          state: present
+          name: EFS-1
+          tags:
+              name: EFS1Tag
+              purpose: file-storage
+          targets:
+              - subnet_id: subnet-0a390751
+                security_groups: [ "sg-e633819c" ]
+
+
+
+              
+                

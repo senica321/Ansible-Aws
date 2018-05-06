@@ -1,0 +1,6 @@
+- rds:
+    command: replicate
+    instance_name: new-database-replica
+    source_instance: new_database
+    wait: yes
+    wait_timeout: 600

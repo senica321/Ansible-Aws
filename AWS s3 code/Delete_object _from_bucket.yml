@@ -1,0 +1,5 @@
+- name: Delete an object from a bucket
+  s3:
+    bucket: bucket1
+    object: /my/desired/key.txt
+    mode: delobj

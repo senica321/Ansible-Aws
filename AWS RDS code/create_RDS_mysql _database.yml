@@ -1,0 +1,11 @@
+- rds:
+    command: create
+    instance_name: Database-1
+    db_engine: MySQL
+    size: 10
+    instance_type: db.m1.small
+    username: mysql_admin
+    password: 0000
+    tags:
+      Environment: testing
+      Application: cms

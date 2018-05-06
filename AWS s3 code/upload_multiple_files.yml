@@ -1,0 +1,4 @@
+- name: upload files
+  s3_sync:
+    bucket: tedder
+    file_root: roles/s3/files/

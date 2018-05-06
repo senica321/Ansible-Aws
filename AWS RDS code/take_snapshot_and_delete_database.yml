@@ -1,0 +1,5 @@
+# Delete an instance, but create a snapshot before doing so
+- rds:
+    command: delete
+    instance_name: Database-1
+    snapshot: Database_snapshot_1

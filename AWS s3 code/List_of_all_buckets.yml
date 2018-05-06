@@ -1,0 +1,2 @@
+# Lists all s3 buckets
+- aws_s3_bucket_facts:

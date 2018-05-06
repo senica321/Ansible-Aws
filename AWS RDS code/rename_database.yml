@@ -1,0 +1,6 @@
+# Rename an instance and wait for the change to take effect
+- rds:
+    command: modify
+    instance_name: Database-1
+    new_instance_name: renamed-database
+    wait: yes

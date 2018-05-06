@@ -1,0 +1,5 @@
+# Reboot an instance and wait for it to become available again
+- rds:
+    command: reboot
+    instance_name: Database-1
+    wait: yes
